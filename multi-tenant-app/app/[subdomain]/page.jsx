@@ -1,6 +1,5 @@
 'use client';
 
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import { subDomainData } from "../utils/subDomainData";
 export default function SubDomainComponent() {

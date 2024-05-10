@@ -4,8 +4,9 @@ import subdomains from './subdomains.json';
 
 
 export const config = {
-  matcher: ['/', '/about', '/_sites/:path'],
-
+  matcher: [
+    "/((?!api/|_next/|_static/|_vercel|[\\w-]+\\.\\w+).*)",
+  ],
 };
 
 export async function middleware(req) {
@@ -13,7 +14,7 @@ export async function middleware(req) {
   // getting url from request, and host name from headers
 
   const url = req.nextUrl;
-  const hostName = req.headers.get("host") || '';
+  const hostName = req.headers.get("host");
 
   // array containing list of allowed domain names/hostnames. need to be modified later when deployed to some production server
   const allowedDomains = ['localhost:3000'];
