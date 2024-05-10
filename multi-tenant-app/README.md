@@ -14,9 +14,17 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to go to home page 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+either click [http://subdomain1.localhost:3000](http://subdomain1.localhost:3000)  or enter this in url to go to `subdomain1 tenant`
+
+or click [http://subdomain2.localhost:3000](http://subdomain2.localhost:3000)  or enter this in url to go to `subdomain2 tenant`
+
+or click [http://subdomain3.localhost:3000](http://subdomain3.localhost:3000)  or enter this in url to go to `subdomain3 tenant`
+
+
+
+
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 

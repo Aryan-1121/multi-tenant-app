@@ -1,5 +1,7 @@
 'use client';
 
+// this will be our single component which will be rendered for each subdomain and changed dynamically based on the subdomain 
+
 import { useParams } from "next/navigation";
 import { subDomainData } from "../utils/subDomainData";
 export default function SubDomainComponent() {

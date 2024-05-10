@@ -1,3 +1,5 @@
+// usign map of objects to store subdomain specific data which is going to be used to render our dynamic component
+
 export const subDomainData = new Map([
   ['subdomain1', {
     bgColour: 'bg-violet-500',

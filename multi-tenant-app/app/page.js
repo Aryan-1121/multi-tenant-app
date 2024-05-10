@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+// we can add buttons specific to each subdomain in future if required
 export default function Home() {
   return (
     <div>
