@@ -4,9 +4,8 @@ import subdomains from './subdomains.json';
 
 
 export const config = {
-  matcher: [
-    "/((?!api/|_next/|_static/|_vercel|[\\w-]+\\.\\w+).*)",
-  ],
+  matcher: ['/', '/about', '/_sites/:path'],
+
 };
 
 export async function middleware(req) {
@@ -25,7 +24,7 @@ export async function middleware(req) {
 
   // extracting the subdomain from the hostName (before [dot])
   const subdomain = hostName.split(".")[0];
-  console.log('middleware subdomain ->', subdomain);
+  // console.log('middleware subdomain ->', subdomain);
 
 
   // we have this subdomain value from req headers, now we need to check if it exists in our subdomains array (defined in subdomains.json), if not exists then return the url as it is else if exists then re-write the url by appending the subdomain to the url
